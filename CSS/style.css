@@ -1,0 +1,228 @@
+/* Home Page CSS starts from here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation bar starts */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    box-shadow: 2px 2px 24px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 4px 22px;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Navigation bar ends */
+
+/* Home Section starts */
+.home {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin: 20px;
+    height: 500px;
+}
+
+.home img {
+    width: 250px;
+    border-radius: 50%;
+    filter: grayscale(1);
+    transition: 1s ease-in-out;
+    margin: 20px;
+}
+
+.home img:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+
+.info {
+    margin: 20px 0px;
+
+}
+
+.info h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.info p {
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.info a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+.info a:hover {
+    color: black;
+    background-color: white;
+    border-top: solid black;
+    border-bottom: solid black;
+}
+
+/* Home Section starts */
+
+/* About Section starts */
+.about {
+    letter-spacing: 3px;
+    margin: 20px;
+    height: 600px;
+}
+
+.one {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.one hr {
+    width: 75%;
+}
+
+.card1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.right {
+    width: 75%;
+}
+
+.right li {
+    list-style: none;
+}
+
+span.first {
+    color: grey;
+    font-weight: bold;
+}
+
+/* About Section ends */
+
+/* Contact Section starts */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.contact p {
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.map{
+    border-radius: 18px;
+}
+
+/* Contact Section ends */
+
+/* Footer Section starts */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 24px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section ends */
+
+/* Scroll Bar CSS */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #777;
+    border-radius: 28px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Mobile View  */
+@media screen and (max-width:768px) {
+    * {
+        font-family: 'Poppins', sans-serif;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .home {
+        height: 600px;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .logo {
+        display: none;
+    }
+
+    .nav-links a {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 4px 22px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-links a:hover {
+        background-color: black;
+        color: whitesmoke;
+    }
+}

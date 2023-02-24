@@ -1,0 +1,140 @@
+/* Home Page CSS starts from here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation bar starts */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  box-shadow: 2px 2px 24px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 0px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 4px 22px;
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Navigation bar ends */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+/* Add a card effect for articles detail */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  width: 60%;
+  border-radius: 18px;
+  box-shadow: 2px 2px 24px 1px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: indigo;
+  font-size: larger;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer Section starts */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 24px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section ends */
+
+/* Scroll Bar CSS */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 28px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Mobile View  */
+@media screen and (max-width:768px) {
+  * {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .home {
+      height: 600px;
+  }
+
+  nav {
+      justify-content: center;
+      align-items: center;
+  }
+
+  nav .logo {
+      display: none;
+  }
+
+  .nav-links a {
+      color: black;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 4px 22px;
+      transition: 0.5s ease-in-out;
+  }
+
+  .nav-links a:hover {
+      background-color: black;
+      color: whitesmoke;
+  }
+}

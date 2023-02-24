@@ -1,0 +1,29 @@
+.conc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .card{
+    width: auto;
+  }
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 70%;
+    cursor: pointer;
+}
+
+.quote {
+    padding: 8px;
+    background-color: azure;
+    border-left: solid aqua;
+}

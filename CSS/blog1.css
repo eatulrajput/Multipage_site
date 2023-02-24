@@ -1,0 +1,12 @@
+.conc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .card{
+    width: auto;
+  }
